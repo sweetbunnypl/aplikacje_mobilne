@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/app_title"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="20dp"
+            android:background="#FFEB3B"
+            android:gravity="center"
+            android:text="C O U N T E R U S"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/show_count"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="#FFEB3B"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/black"
+            android:textSize="200dp" />
+
+        <Button
+            android:onClick="restartButton"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:text="RESTART" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="20dp">
+
+
+            <Button
+                android:onClick="countUpButton"
+                android:layout_height="50dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:text="COUNT UP" />
+
+            <Button
+                android:onClick="countDownButton"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:text="COUNT DOWN" />
+
+        </LinearLayout>
+
+</LinearLayout>
