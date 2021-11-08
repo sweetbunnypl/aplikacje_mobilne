@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"/>
+
+    <TextView
+        android:id="@+id/view_question"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:layout_margin="10dp"
+        android:textSize="30dp"
+        android:text="Question" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/button_restart"
+            android:onClick="RestartQuiz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            app:cornerRadius="0dp"
+            android:visibility="invisible"
+            app:strokeColor="@color/white"
+            android:text="@string/restart" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:gravity="center|top"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_true"
+            android:onClick="AnswerTrue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            app:cornerRadius="0dp"
+            app:strokeColor="@color/white"
+            android:text="@string/trueString" />
+        <Space
+            android:layout_width="60dp"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:id="@+id/button_false"
+            android:onClick="AnswerFalse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            app:cornerRadius="0dp"
+            app:strokeColor="@color/white"
+            android:text="@string/falseString" />
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/button_cheat"
+            android:onClick="CheatAnswer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            app:cornerRadius="0dp"
+            app:strokeColor="@color/white"
+            android:text="@string/cheat" />
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_previous"
+            android:onClick="Previous"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            app:cornerRadius="0dp"
+            app:strokeWidth="2dp"
+            app:strokeColor="@color/white"
+            android:text="@string/previous" />
+
+        <Button
+            android:id="@+id/button_next"
+            android:onClick="Next"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            app:cornerRadius="0dp"
+            app:strokeWidth="2dp"
+            app:strokeColor="@color/white"
+            android:text="@string/next" />
+    </LinearLayout>
+</LinearLayout>

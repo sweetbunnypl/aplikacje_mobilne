@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">lista2</string>
+    <string name="trueString">TRUE</string>
+    <string name="falseString">FALSE</string>
+    <string name="correct_answer">CORRECT</string>
+    <string name="next">NEXT</string>
+    <string name="previous">PREVIOUS</string>
+    <string name="incorrect_answer">INCORRECT</string>
+    <string name="restart">RESTART QUIZ</string>
+    <string name="cheat">CHEAT</string>
+    <string name="answer">SHOW ANSWER</string>
+    <string name="warning">ARE YOU SURE?\nYOUR FINAL SCORE WILL BE REDUCED BY 15%</string>
+
+
+    <string name="question1">Gold can be created from other elements.</string>
+    <bool name="question1_ans">true</bool>
+
+    <string name="question2">Air can make shadows.</string>
+    <bool name="question2_ans">true</bool>
+
+    <string name="question3">Mass and weight are the same.</string>
+    <bool name="question3_ans">false</bool>
+
+    <string name="question4">Electronic devices could charge themselves without being plugged into an electricity source.</string>
+    <bool name="question4_ans">true</bool>
+
+    <string name="question5">Einstein got a Nobel prize for the special theory of relativity.</string>
+    <bool name="question5_ans">false</bool>
+
+    <string name="question6">Electrons are larger than molecules.</string>
+    <bool name="question6_ans">false</bool>
+
+    <string name="question7">Radio antennas can emit visible light.</string>
+    <bool name="question7_ans">true</bool>
+
+    <string name="question8">Time go faster at the top of a building compared to the bottom.</string>
+    <bool name="question8_ans">true</bool>
+
+
+</resources>
