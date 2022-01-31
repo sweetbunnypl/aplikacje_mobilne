@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/searchTaskButton"
+        android:icon="@drawable/ic_baseline_search_24"
+        android:title="SEARCH TASK"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        app:showAsAction="ifRoom|collapseActionView" />
+    <item
+        android:id="@+id/addTaskButton"
+        android:icon="@drawable/ic_baseline_add_circle_24"
+        android:title="ADD TASK"
+        app:showAsAction="ifRoom|collapseActionView" />
+</menu>
